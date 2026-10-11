@@ -2,65 +2,65 @@
 
 **Your life. Your pace. Your choice.**
 
-Bila Pressure is a youth-focused project exploring how data and carefully designed digital support can help adults make more informed, healthier choices about alcohol—without shame, pressure, or judgment.
+Bila Pressure is an early-stage, privacy-conscious project exploring supportive habit reflection, responsible data insights, and future community resources for adults aged **18–29 in Kenya**.
 
-> **Project status:** Early discovery and problem definition. This repository does not provide medical advice and has not been evaluated for effectiveness.
+> **Status:** Interactive front-end prototype. This is not a medical product, has no real AI integration, and has not been evaluated for effectiveness.
 
-## The problem we want to understand
+## Try the prototype
 
-Some young adults want to cut back on drinking but may face social pressure, habits, limited access to practical support, or difficulty seeing their own patterns. Before building a solution, we need to understand which barriers matter most to the people we hope to serve.
+Open **[index.html](./index.html)** in a browser, or enable GitHub Pages to host the static prototype. The current version offers:
+- Optional daily mood and intention check-in.
+- Optional reflection on influences and a private note.
+- A recent-entry view and simple personal snapshot.
+- Export and delete controls.
+- Safety and privacy notices.
 
-## Our first audience
+**Privacy note:** Entries are stored in browser-local storage on the device. There is no backend, account system, shared database, or network upload of check-in entries in this prototype. Anyone with access to the same browser profile may be able to see them. Exported files may also contain sensitive information.
 
-Adults aged **18–29 in Kenya**. This is an initial focus for research, not a claim that all young adults drink or need the same kind of support.
+## One platform, three connected components
 
-## What we plan to build
+1. **Bila Pressure Coach** — the core experience: private check-ins, personal intentions, and non-judgmental reflection.
+2. **Bila Pressure Insights** — a data portfolio using synthetic data, Excel, SQL, Python, and Power BI to explore usability and engagement responsibly.
+3. **Bila Pressure Community** — a possible later stage for educational resources and supportive challenges, only after demand, safeguarding, moderation, and privacy requirements are validated.
 
-A privacy-conscious, data-informed prototype that may include:
+Only the first component has a basic front-end prototype today. The analytics workflow and community are planned—not built.
 
-- Simple, optional self-reflection and progress tracking.
-- Non-judgmental tips for people who choose to reduce their drinking.
-- A way to measure engagement and outcomes responsibly.
-- An analytics portfolio using Excel, SQL, Python, and Power BI.
+## Repository guide
 
-We will validate the need before deciding which features to build.
+- `index.html` — static interactive prototype.
+- `docs/problem_statement.md` — research questions, assumptions, scope, and safeguards.
+- `docs/roadmap.md` — phased plan and decision gates.
+- `docs/data_dictionary.md` — prototype fields, storage behavior, and future synthetic-data rules.
 
-## How we will approach the work
+## Development principles
 
-1. Define the problem and assumptions.
-2. Validate demand through ethical, voluntary research.
-3. Identify trustworthy data sources and document their limitations.
-4. Build a transparent data model and analysis workflow.
-5. Create dashboards with clearly defined metrics.
-6. Prototype support features only within appropriate safety limits.
-7. Test usability and evaluate outcomes before making any impact claims.
+- Adults 18+ only.
+- Treat assumptions as questions to test, not established facts.
+- Use synthetic data for public demos and portfolio analysis.
+- Collect the minimum necessary data and explain its purpose.
+- No diagnosis, treatment claims, or unsupported promises of effectiveness.
+- Seek qualified health-professional input before adding health-related guidance.
+- People who may be physically dependent on alcohol should consult a qualified healthcare professional before suddenly stopping; withdrawal can be dangerous.
+- Evaluate usability, safety, and outcomes separately. Engagement alone does not demonstrate reduced alcohol-related harm.
 
-## Safety and privacy principles
+## Roadmap
 
-- Intended for adults 18 and older.
-- No diagnosis, treatment claims, or promises that the product will prevent harm.
-- No real personal or health data in the repository. Use synthetic or appropriately de-identified data for development.
-- Collect as little information as possible, explain its purpose, and obtain meaningful consent where research involves people.
-- Seek qualified health-professional input before offering health-related guidance.
-- Include clear guidance to seek qualified help when someone may be at risk. People who may be physically dependent on alcohol should consult a qualified healthcare professional before suddenly stopping, because withdrawal can be dangerous.
-- Measure outcomes honestly; a prototype or dashboard alone does not prove effectiveness.
+1. Define and validate the problem.
+2. Test prototype usability with appropriate safeguards.
+3. Build a documented synthetic dataset and reproducible cleaning workflow.
+4. Analyze the data with SQL/Python and build a Power BI dashboard.
+5. Review safety, privacy, accessibility, and product requirements.
+6. Consider a controlled pilot only with an appropriate protocol and consent.
+7. Make no effectiveness claims without suitable evidence.
 
-## Planned tools
+## Technology
 
-- **Excel** — initial exploration and quality checks
-- **SQL** — data modelling and analysis
-- **Python** — cleaning, analysis, and reproducible workflows
-- **Power BI** — reporting and visualization
-- **Next.js / React** — possible MVP, after discovery and safety requirements are clearer
+- HTML, CSS, JavaScript for the initial static prototype.
+- Planned portfolio tools: Excel, SQL, Python, Power BI.
+- Next.js/React, backend services, and AI are future options—not current capabilities.
 
-## Initial success measure
+## Project status and contribution
 
-We will choose a primary outcome only after reviewing suitable evidence and getting appropriate guidance. One candidate is change in self-reported heavy-drinking episodes over a defined period, but the definition, measurement method, baseline, and evaluation design must be established before use. We will not present an unvalidated measure as proof of impact.
+This project is being developed iteratively. Start with the problem statement and roadmap before expanding features. Do not commit personal, identifiable, or sensitive health data to this public repository.
 
-## Get involved
-
-This is an early-stage learning and portfolio project. Feedback from young adults, researchers, and qualified health professionals will help shape the next steps.
-
----
-
-*Bila Pressure is an independent project, not a substitute for professional healthcare. No effectiveness claims have been established.*
+Bila Pressure is an independent learning project, not a substitute for professional healthcare.
